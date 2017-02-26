@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+{% load staticfiles %} 
+<html>
+    <head>
+        <title>Rango</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static "bootstrap/css/bootstrap.min.css" %}" />
+        <!-- JavaScript -->
+        <script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
+    </head>
+
+    <body>
+        <h1>Tutorial Composed by Andrew B Kim</h1>
+
+        <div>
+        hey there partner! <br />
+        <strong>{{ boldmessage }} </strong> <br />
+        </div>
+        <div>
+            <a href="/">Main</a><br />
+            <a href="/rango/about/">About</a><br />
+            <img src="{% static "images/cat.jpg" %}"
+            alt="Picture of a cat" />
+            <!-- <a href = "/">Back to main</a> -->
+        </div>
+    </body>
+</html>
+
